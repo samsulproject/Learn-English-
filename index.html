@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EnglishTalk - Mr. Wilson</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        🎓 EnglishTalk
+    </div>
+
+    <button id="challengeTopBtn" class="challenge-top">
+        🎯 Challenge
+    </button>
+</header>
+
+
+<main class="app">
+
+    <!-- CHARACTER -->
+    <section class="teacher-section">
+
+        <div class="teacher-card">
+
+            <div class="status">
+                <span class="online-dot"></span>
+                Mr. Wilson • AI Teacher
+            </div>
+
+            <div id="teacher" class="teacher normal">
+
+                <!-- HAIR -->
+                <div class="hair"></div>
+
+                <!-- HEAD -->
+                <div class="head">
+
+                    <div class="ear left-ear"></div>
+                    <div class="ear right-ear"></div>
+
+                    <!-- EYES -->
+                    <div class="eyes">
+                        <div class="eye left-eye">
+                            <span></span>
+                        </div>
+
+                        <div class="eye right-eye">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <!-- GLASSES -->
+                    <div class="glasses">
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <!-- NOSE -->
+                    <div class="nose"></div>
+
+                    <!-- MOUTH -->
+                    <div id="mouth" class="mouth"></div>
+
+                </div>
+
+                <!-- BODY -->
+                <div class="body">
+
+                    <div class="shirt"></div>
+
+                    <div class="tie"></div>
+
+                    <div class="jacket left"></div>
+                    <div class="jacket right"></div>
+
+                </div>
+
+            </div>
+
+            <div class="teacher-name">
+                <h2>Mr. Wilson</h2>
+                <p>Strict English Teacher</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHAT -->
+    <section class="chat-section">
+
+        <div class="chat-header">
+            <div>
+                <h1>English Conversation</h1>
+                <p>Speak English. Don't be afraid to make mistakes.</p>
+            </div>
+
+            <div class="level">
+                Level <b id="levelText">Beginner</b>
+            </div>
+        </div>
+
+
+        <div id="chatBox" class="chat-box">
+
+            <div class="message teacher-message">
+
+                <div class="avatar-small">👨‍🏫</div>
+
+                <div class="bubble">
+
+                    <strong>Mr. Wilson</strong>
+
+                    <p>
+                        Good morning, student.
+                        Tell me about yourself in English.
+                    </p>
+
+                    <button
+                        class="speak-message"
+                        onclick="speakText('Good morning, student. Tell me about yourself in English.')">
+                        🔊
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- INPUT -->
+        <div class="input-area">
+
+            <input
+                id="userInput"
+                type="text"
+                placeholder="Type your answer in English..."
+                autocomplete="off"
+            >
+
+            <button
+                id="micBtn"
+                class="mic-button"
+                title="Speak">
+                🎤
+            </button>
+
+            <button
+                id="sendBtn"
+                class="send-button">
+                ➤
+            </button>
+
+        </div>
+
+
+        <div id="listeningText" class="listening">
+            Press 🎤 and speak English
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- CHALLENGE -->
+<section id="challengePanel" class="challenge-panel">
+
+    <div class="challenge-card">
+
+        <button id="closeChallenge" class="close-button">
+            ×
+        </button>
+
+        <div class="challenge-icon">
+            🎯
+        </div>
+
+        <h2>Challenge Mode</h2>
+
+        <p>
+            You have <b>60 seconds</b>.
+        </p>
+
+        <div class="challenge-question">
+
+            <h3>Explain this topic in English:</h3>
+
+            <p id="challengeTopic">
+                "Why is learning English important?"
+            </p>
+
+        </div>
+
+        <div id="timer" class="timer">
+            60
+        </div>
+
+        <button id="startChallenge" class="start-button">
+            Start Challenge
+        </button>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p>EnglishTalk © 2026</p>
+    <small>
+        Practice every day. Get better every day.
+    </small>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
